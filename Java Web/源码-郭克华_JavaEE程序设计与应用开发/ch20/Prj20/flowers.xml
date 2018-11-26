@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gb2312"?>
+<flowers>
+	<flower id="1">
+		<name>玫瑰</name>
+		<price>10</price>
+	</flower>
+	<flower id="2">
+		<name>百合</name>
+		<price>20</price>
+	</flower>
+	<flower id="3">
+		<name>兰花</name>
+		<price>15</price>
+	</flower>
+</flowers>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="regForm" type="prj11.form.RegForm" />
+    <form-bean name="loginForm" type="prj11.form.LoginForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      attribute="regForm"
+      input="/reg.jsp"
+      name="regForm"
+      path="/reg"
+      scope="request"
+      type="prj11.action.RegAction" />
+    <action
+      attribute="loginForm"
+      input="/login.jsp"
+      name="loginForm"
+      path="/login"
+      scope="request"
+      type="prj11.action.LoginAction" />
+    
+
+  </action-mappings>
+
+  <message-resources parameter="prj11.ApplicationResources" />
+  <message-resources key="zh_CN" parameter="prj11.ApplicationResources_zh_CN" />
+</struts-config>
+
